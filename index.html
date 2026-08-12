@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
@@ -43,6 +44,129 @@
         </div>
     </section>
   
+      <section class="form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>แบบฟอร์มสมัครงาน</h2>
+                <p>กรุณากรอกข้อมูลให้ครบถ้วนเพื่อดำเนินการสมัครงาน</p>
+            </div>
+
+            <div class="form-container">
+                <form action="#" method="POST">
+                  
+                    <div class="form-group-section">
+                        <div class="section-title">
+                            <div class="icon-box blue"><i class="fa-regular fa-user"></i></div>
+                            <h3>ข้อมูลส่วนตัว</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="firstname">ชื่อ *</label>
+                                <input type="text" id="firstname" placeholder="กรอกชื่อของคุณ" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="lastname">นามสกุล *</label>
+                                <input type="text" id="lastname" placeholder="กรอกนามสกุลของคุณ" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="email">อีเมล *</label>
+                                <input type="email" id="email" placeholder="email@example.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">เบอร์โทรศัพท์ *</label>
+                                <input type="tel" id="phone" placeholder="0XX-XXX-XXXX" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="address">ที่อยู่</label>
+                            <textarea id="address" rows="3" placeholder="กรอกที่อยู่ปัจจุบัน"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="province">จังหวัด</label>
+                            <select id="province">
+                                <option value="">เลือกจังหวัด</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group-section">
+                        <div class="section-title">
+                            <div class="icon-box green"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h3>ประวัติการศึกษา</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="degree">ระดับการศึกษา *</label>
+                                <input type="text" id="degree" placeholder="เช่น ปริญญาตรี" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="university">สถาบันการศึกษา *</label>
+                                <input type="text" id="university" placeholder="ชื่อสถาบันการศึกษา" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="grad_year">ปีที่จบการศึกษา</label>
+                                <input type="text" id="grad_year" placeholder="พ.ศ. 2566">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group-section">
+                        <div class="section-title">
+                            <div class="icon-box blue"><i class="fa-solid fa-briefcase"></i></div>
+                            <h3>ประวัติการทำงาน</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="company">บริษัทที่ทำงานล่าสุด</label>
+                                <input type="text" id="company" placeholder="ชื่อบริษัท">
+                            </div>
+                            <div class="input-group">
+                                <label for="position">ตำแหน่งงาน</label>
+                                <input type="text" id="position" placeholder="ตำแหน่งที่เคยทำ">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="experience">ประสบการณ์การทำงาน</label>
+                            <textarea id="experience" rows="4" placeholder="อธิบายเกี่ยวกับประสบการณ์การทำงานของคุณ"></textarea>
+                        </div>
+                    </div>
+
+                    <hr class="divider">
+
+                    <div class="form-group-section options-section">
+                        <div class="input-group">
+                            <label>ประเภทการจ้างงานที่ต้องการ *</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="job_type" checked> พนักงานประจำ</label>
+                                <label><input type="radio" name="job_type"> พนักงานชั่วคราว</label>
+                                <label><input type="radio" name="job_type"> ฟรีแลนซ์</label>
+                                <label><input type="radio" name="job_type"> นักศึกษาฝึกงาน</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group mt-3">
+                            <label>ทักษะที่มี (เลือกได้หลายข้อ)</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox"> Microsoft Office</label>
+                                <label><input type="checkbox"> การสื่อสารภาษาอังกฤษ</label>
+                                <label><input type="checkbox"> การทำงานเป็นทีม</label>
+                                <label><input type="checkbox"> การแก้ปัญหา</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="submit-container">
+                        <button type="submit" class="btn-submit"><i class="fa-regular fa-paper-plane"></i> ส่งใบสมัคร</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
   
   <footer>
     <div class="container footer-container">
